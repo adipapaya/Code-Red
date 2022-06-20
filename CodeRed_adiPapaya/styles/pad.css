@@ -1,0 +1,547 @@
+﻿/*ניווט סרגל______________________________________________________________________________________________________________________________________________________________________________________________________________________ 
+*/
+body {
+    width: 1720px;
+    margin: 0 auto;
+    direction: rtl;
+    background-color: #FAE2E2;
+    font-family: Calibri;
+    font-size: 14pt;
+}
+
+.background {
+    background-color: #E5C8C8;
+    height: 60px;
+    width: auto;
+}
+
+.notActive {
+    cursor: not-allowed;
+    color: lightslategray;
+}
+
+.activate {
+    color: #8E576B;
+}
+
+#container1 {
+    margin: 0 auto;
+    width: 960px;
+}
+
+header {
+    display: block;
+}
+
+#logo {
+    width: 130px;
+    height: 50px;
+    float: right;
+    background-repeat: no-repeat;
+    padding: 0px;
+}
+
+#mainNav, #footerNav {
+    position: relative;
+    right: 50px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+#mainNav > ul > li:nth-child(1) {
+    margin-right: 80px;
+}
+
+#mainNav > ul > li, #footerNav > ul > li {
+    float: right;
+}
+
+    #mainNav > ul > li > a, #footerNav {
+        font-size: 16pt;
+        text-align: center;
+        margin-left: 30px;
+    }
+
+#mainNav ul li a {
+    text-decoration: none;
+}
+
+#mainNav ul li a, #footerNav ul li a {
+    display: block;
+    height: 20px;
+    padding: 10px;
+    font-family: Assistant;
+}
+
+#mainNav > ul > li ul {
+    display: none;
+    position: absolute;
+    background-color: #FFEEEE;
+    border: 1px solid #8E576B;
+}
+
+#mainNav ul li:hover ul {
+    display: block;
+}
+
+#mainNav ul li ul li:hover a {
+    background-color: #F9AECC;
+}
+
+#mainNav ul li ul li:active a {
+    text-decoration: underline;
+}
+
+
+
+/*לחם פירורי
+*/
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #FEFAF7;
+}
+
+    /* Display list items side by side */
+    ul.breadcrumb li {
+        display: inline;
+        font-size: 12pt;
+    }
+
+        /* Add a color to all links inside the list */
+        ul.breadcrumb li a {
+            color: #0275d8;
+            text-decoration: none;
+        }
+
+            /* Add a color on mouse-over */
+            ul.breadcrumb li a:hover {
+                color: #01447e;
+                text-decoration: underline;
+            }
+
+
+
+/*תוכן_________________________________________________________________________________________________________________________________________________________________________________________________________________________
+*/
+
+#main {
+    background-color: #FEFAF7;
+}
+
+h1, h3, #firstSpan {
+    padding-right:30px;
+}
+
+#soup{
+    float:right;
+    height:60px;
+    width:60px;
+}
+
+
+#washing{
+    padding-left:200px;
+}
+
+h2 {
+    text-align: center;
+    background-color: #FAE2E2;
+    height: 90px;
+    border: 5px solid #DFC6C6;
+    padding-top:50px;
+}
+
+#clock1, #madeOf1, #sign1{
+    position:absolute;
+}
+
+#clock1{
+        margin-right:200px;
+        height:60px;
+        width:60px;
+}
+
+#madeOf1 {
+    margin-right: 450px;
+    height: 70px;
+    width: 70px;
+}
+
+#sign1 {
+    margin-right: 700px;
+    height: 50px;
+    width: 15px;
+}
+
+
+#time1 {
+    margin-right: 183px;
+}
+
+#made1 {
+    margin-right: 170px;
+}
+
+#mark1 {
+    margin-right: 135px;
+}
+
+
+#timeEX1 {
+    margin-right: 192px;
+}
+
+#madeEX1 {
+    margin-right: 185px;
+}
+
+#markEX1 {
+    margin-right: 93px;
+}
+
+
+
+
+
+/*גלריה_____________________________________________________________________________________________________________________________________________________________________________________________________________________*/
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    text-align:center;
+}
+
+#firstPic {
+    display: block;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #8DB9F2;
+    font-weight: bold;
+    font-size: 20pt;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    direction:ltr;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+    direction: ltr;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: black;
+    font-size: 14px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #DFC6C6;
+    padding: 2px 16px;
+    color: #8E576B;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+
+
+
+
+
+
+
+/*גלריה_____________________________________________________________________________________________________________________________________________________________________________________________________________________*/
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container2 {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides2 {
+    display: none;
+    text-align: center;
+}
+
+#firstPic2 {
+    display: block;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev2,
+.next2 {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #8DB9F2;
+    font-weight: bold;
+    font-size: 20pt;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next2 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    direction: ltr;
+}
+
+.prev2 {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+    direction: ltr;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev2:hover,
+    .next2:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+/* Number text (1/3 etc) */
+.numbertext2 {
+    color: black;
+    font-size: 14px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container2 {
+    text-align: center;
+    background-color: #DFC6C6;
+    padding: 2px 16px;
+    color: #8E576B;
+}
+
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column2 {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+
+
+
+
+
+
+
+
+
+
+/*גלריה_____________________________________________________________________________________________________________________________________________________________________________________________________________________*/
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container3 {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides3 {
+    display: none;
+    text-align: center;
+}
+
+#firstPic3 {
+    display: block;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev3,
+.next3 {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #8DB9F2;
+    font-weight: bold;
+    font-size: 20pt;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next3 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    direction: ltr;
+}
+
+.prev3 {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+    direction: ltr;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev3:hover,
+    .next3:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+/* Number text (1/3 etc) */
+.numbertext3 {
+    color: black;
+    font-size: 14px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container3 {
+    text-align: center;
+    background-color: #DFC6C6;
+    padding: 2px 16px;
+    color: #8E576B;
+}
+
+.row3:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column3 {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+
+
+
+
+
+
+
+
+#timeEX3 {
+    margin-right: 180px;
+}
+
+#madeEX3 {
+    margin-right: 175px;
+}
+
+#markEX3 {
+    margin-right: 75px;
+}
+
+
+    /*פוטר_________________________________________________________________________________________________________________________________________________________________________________________________________________*/
+    #footerNav nav li a {
+        display: inline-block;
+        float: right;
+        text-decoration: underline;
+    }
+
+#footerNav > ul > li:nth-child(1) {
+    margin-right: 250px;
+}

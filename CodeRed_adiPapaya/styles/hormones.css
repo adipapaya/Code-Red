@@ -1,0 +1,253 @@
+﻿/*ניווט סרגל 
+*/
+body {
+    width: 1720px;
+    margin: 0 auto;
+    direction: rtl;
+    background-color: #FAE2E2;
+    font-family: Calibri;
+    font-size: 14pt;
+}
+
+.background {
+    background-color: #E5C8C8;
+    height: 60px;
+    width: auto;
+}
+
+.notActive {
+    cursor: not-allowed;
+    color: lightslategray;
+}
+
+.active {
+    color: #8E576B;
+}
+
+#container1 {
+    margin: 0 auto;
+    width: 960px;
+}
+
+header {
+    display: block;
+}
+
+#logo {
+    width: 130px;
+    height: 50px;
+    float: right;
+    background-repeat: no-repeat;
+    padding: 0px;
+}
+
+#mainNav, #footerNav {
+    position: relative;
+    right: 50px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+#mainNav > ul > li:nth-child(1) {
+    margin-right: 80px;
+}
+
+#mainNav > ul > li, #footerNav > ul > li {
+    float: right;
+}
+
+    #mainNav > ul > li > a, #footerNav {
+        font-size: 16pt;
+        text-align: center;
+        margin-left: 30px;
+    }
+
+#mainNav ul li a {
+    text-decoration: none;
+}
+
+#mainNav ul li a, #footerNav ul li a {
+    display: block;
+    height: 20px;
+    padding: 10px;
+    font-family: Assistant;
+}
+
+#mainNav > ul > li ul {
+    display: none;
+    position: absolute;
+    background-color: #FFEEEE;
+    border: 1px solid #8E576B;
+}
+
+#mainNav ul li:hover ul {
+    display: block;
+}
+
+#mainNav ul li ul li:hover a {
+    background-color: #F9AECC;
+}
+
+#mainNav ul li ul li:active a {
+    text-decoration: underline;
+}
+
+/*לחם פירורי
+*/
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #FEFAF7;
+}
+
+    /* Display list items side by side */
+    ul.breadcrumb li {
+        display: inline;
+        font-size: 12pt;
+    }
+
+        /* Add a color to all links inside the list */
+        ul.breadcrumb li a {
+            color: #0275d8;
+            text-decoration: none;
+        }
+
+            /* Add a color on mouse-over */
+            ul.breadcrumb li a:hover {
+                color: #01447e;
+                text-decoration: underline;
+            }
+
+
+
+/*תוכן
+*/
+
+#main {
+    background-color: #FEFAF7;
+    font-size:16pt;
+}
+
+
+.hila{
+    height:160px;
+    width:120px;
+}
+
+#main> div, #main> a>span{
+    position:absolute;
+    display:inline-block;
+}
+
+#text1 {
+    margin-right: 120px;
+    margin-top: 45px;
+}
+
+.buble1{
+    margin-right:70px;
+    height:140px;
+}
+
+.oshrat {
+    height: 160px;
+    width: 150px;
+    float:left;
+}
+
+#buble2 {
+    height: 140px;
+    width:560px;
+    margin-right:230px;
+}
+
+#text2 {
+    margin-right: 260px;
+    margin-top: 35px;
+}
+
+#text3 {
+    margin-right: 110px;
+    margin-top: 65px;
+}
+
+#buble3 {
+    height: 300px;
+    width: 560px;
+    margin-right: 230px;
+}
+
+#text4 {
+    margin-right: 241px;
+    margin-top: 35px;
+}
+
+#special {
+    margin-top: 150px;
+}
+
+#text5 {
+    margin-right: 125px;
+    margin-top: 40px;
+}
+
+#buble4 {
+    height: 140px;
+    width: 560px;
+    margin-right: 230px;
+}
+
+#text6 {
+    margin-right: 340px;
+    margin-top: 40px;
+}
+
+#button {
+    margin-right: 440px;
+    margin-top: 90px;
+    background-color: #348DFF;
+    color: white;
+    height: 30px;
+    width: 120px;
+    border-radius: 10px;
+    text-align:center;
+}
+
+a:hover #button {
+    background-color: #B05075;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*פוטר*/
+
+#footerNav nav li a {
+    display: inline-block;
+    float: right;
+    text-decoration: underline;
+}
+
+#footerNav > ul > li:nth-child(1) {
+    margin-right: 250px;
+}
+
